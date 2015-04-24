@@ -8,3 +8,6 @@ hist(salaries$SAL)
 skewness(salaries$SAL)
 kurtosis(salaries$SAL)
 plot(salaries$AGE, salaries$SAL)
+
+qqnorm(salaries$SAL)
+qqline(salaries$SAL)
