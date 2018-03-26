@@ -1,0 +1,13 @@
+drift - target variable changes over time in unforseen ways / allow the forecasts to increase or decrease over time, where the amount of change over time (called the drift) is set to be the average change seen in the historical data.
+
+random walk - long periods of apparent trends up or down / sudden and unpredictable changes in direction. forecasts = naive forecast because unpredictable
+
+Stationarity - properties do not depend on time - no predictible patterns long term. such as white noise
+
+differencing - compute the differences between consecutive observations. can be used to achieve stationarity
+
+Autoregressive models - AR(1) and AR(2). Forecast the variable of interest using a linear combination of past values of the variable. Variance of error changes scale of series - not patterns.
+
+Moving Average Models - MA(1) and MA(2). Uses past forecast errors in a regression-like model. Each value of Yt can be thought of as a weighted moving average of the past few forecast errors. 
+
+Non-seasonal ARIMA models - AutoRegressive Integrated Moving Average model.

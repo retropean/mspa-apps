@@ -1,0 +1,16 @@
+There are three types of time series patterns:
+
+- Trend: A increase or decrease over a long period of time in a dataset.
+- Seasonal: Data influenced by seasonal factors.
+- Cyclic: Increases and decreases of no fixed period. Similar to seasonal in that data experiences ups and downs, but fluctuations have no fixed length (though tend to be longer than seasonal fluctuations).
+
+All time series patterns are made up of three components: fluctuations caused by seasons, or Seasonal, fluctuations caused by long term trends or cycles, or trend-cycle, and data fluctuations unexplained by those two, or the remainder. This will be more clear when looking at an example.
+
+I used the 'cafe' dataset included in fpp, which tracks quarterly expenditure on eating out in Australia from 1982 to 2011. Using seasonal and trend decomposition using Loess we can see the three components:
+
+Keeping in mind the equation yt=St+Tt+Et, we can see visually that yt is the top graph, the second graph is the seasonal component, the third graph is the trend-cycle component, and then finally the Et which is remainder.
+
+In this case, the seasonal fluctuations grow larger with time, but the same seasonal pattern is consistent, with Q4 being the strongest and Q2 the weakest. As such, it seems important to  model all three components or else one may miss the growing seasonal fluctuations over time. 
+
+cafe<-cafe
+plot(stl(cafe, s.window=5))

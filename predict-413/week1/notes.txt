@@ -1,0 +1,9 @@
+
+When a P value is less than or equal to the significance level, you reject the null hypothesis.
+
+The greater the magnitude of T (it can be either positive or negative), the greater the evidence against the null hypothesis that there is no significant difference.
+
+
+http://blog.minitab.com/blog/adventures-in-statistics-2/understanding-t-tests-t-values-and-t-distributions
+
+http://blog.minitab.com/blog/adventures-in-statistics-2/understanding-hypothesis-tests:-significance-levels-alpha-and-p-values-in-statistics
