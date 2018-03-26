@@ -43,3 +43,8 @@ Temporary Items
 .apdisk
 *.rst
 *.html
+*.xlsx
+*.csv
+*.json
+*.db
+*.pkl
