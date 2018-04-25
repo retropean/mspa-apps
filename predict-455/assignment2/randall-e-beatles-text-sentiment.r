@@ -51,7 +51,8 @@ for (ifile in seq(along = file_names)) {
   # of words to be displayed in the cloud
   # best practice for word clouds is horizontal text: rot.per = 0.0
   # explore by modifying the min.freq and max.words argument values
-  wordcloud(this_text_vector, min.freq = 5,
+  beatles_reviews_clean$word
+  wordcloud(beatles_reviews_clean$word, min.freq = 5,
             max.words = 150, 
             random.order = FALSE,
             random.color = FALSE,
@@ -62,6 +63,16 @@ for (ifile in seq(along = file_names)) {
             fixed.asp = TRUE)
   dev.off()
 }  
+  
+wordcloud(this_text_vector, min.freq = 5,
+          max.words = 150, 
+          random.order = FALSE,
+          random.color = FALSE,
+          rot.per = 0.0, # all horizontal text
+          colors = c(RED,BLUE,GREEN,LBLUE,UBLUE),
+          ordered.colors = FALSE,
+          use.r.layout = FALSE,
+          fixed.asp = TRUE)
   
 # Stop words from the tidytext package
 data("stop_words")
