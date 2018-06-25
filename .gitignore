@@ -49,3 +49,5 @@ Temporary Items
 *.db
 *.pkl
 *.zip
+predict-455/assignment2/.RData
+predict-455/assignment2/.Rhistory

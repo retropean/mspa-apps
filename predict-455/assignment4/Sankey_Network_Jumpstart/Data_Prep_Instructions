@@ -1,0 +1,37 @@
+Preparing data for Sankey Network Diagram exercise
+Chicago City Budget Example
+
+	1) Obtain data online
+		https://data.cityofchicago.org/Administration-Finance/Budget-2014-Budget-Ordinance-Appropriations/ub6s-xy6e/data
+
+	2) Examine data
+		"DATA" tab on Chicago_Budget_2014.xlsx
+
+	3) Determine which fields you'd like to include in your diagram
+		For this exercise, we've selected FUND_TYPE, DEPARTMENT_DESCRIPTION and ORDINANCE_2014_AMOUNT
+
+	4) Excel data prep
+		a) Using Excel, create a pivot table of the fields you're interested in 
+			See "Pivot" worksheet for an example
+		b) Copy all of the node names (column A) and paste them on a separate tab
+			To ensure you don't have repitition of names, remove duplicates
+			You may want to format the names further, which can be done manually or using Excel (in this example, the =lower() function was used to convert text to all lowercase)
+		c) Give each node name a unique numerical value starting at 0 and going +1 until completed
+		d) Create a second table that identifies the sources, targets and values
+			Source = node to the left
+			Target = node to the right
+			Value = numerical value associated with the source/target combination
+			Sources and Targets should be identified by their numerical values established in 4c
+		e) You should now have two tables
+			One with just one column that should be called "nodes"
+			One with just three columns that should be called "links"
+		f) Use Excel's concatenate function to help you write code for json
+			See volumns B through I on "Transformed_Data" worksheet in Chicago_Budget_2014.xlsx
+
+	5) Create json file
+		a) Copy the resulting values for your "nodes" and "links" tables from step 4f
+		b) Paste this text into a text editor such as Sublime Text or Atom
+			Alternatively, you may use a converter such as https://shancarter.github.io/mr-data-converter/
+		c) Save as a .json file
+
+	You should now be ready to leverage the jump-start code provided with only minor edits needed.

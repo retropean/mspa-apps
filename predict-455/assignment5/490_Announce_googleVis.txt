@@ -1,0 +1,8 @@
+If you are able to install googleVis on your computer, then another way to make a choropleth map is to use that package. 
+
+Making a map with the googleVis package and its gvisGeoChart function requires a connection to the Internet. googleVis uses the Google Charts API to make a map that can be displayed in a Web browser window.
+
+This method for making a choropleth map requires much less memory than the direct method demonstrated in the jump-start program. 
+
+The attached zip archive contains the jump-start program and another copy of the SAT data used in to create the plot.
+
